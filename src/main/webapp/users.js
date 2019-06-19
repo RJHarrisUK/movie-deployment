@@ -38,7 +38,7 @@
     
         // }
     
-        multi("GET", "http://35.205.127.158:8888/movieapp/api/user/getAllUsers").then(val => {
+        multi("GET", "http://34.65.182.174:8888/movieapp/api/user/getAllUsers").then(val => {
     
             let data = JSON.parse(val);
     

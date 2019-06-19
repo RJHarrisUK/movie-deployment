@@ -39,7 +39,7 @@ let updateId = sessionStorage.getItem("updateTerm");
 
     }
 
-    multi("PUT", "http://35.205.127.158:8888/movieapp/api/movie/updateMovie/"+updateId, JSON.stringify(movie)).then(val => {
+    multi("PUT", "http://34.65.182.174:8888/movieapp/api/movie/updateMovie/"+updateId, JSON.stringify(movie)).then(val => {
 
         console.log(val);
         document.location.href = "movies.html";

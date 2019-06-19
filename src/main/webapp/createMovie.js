@@ -39,7 +39,7 @@ const movieHandler = () => {
 
 
 
-    multi("POST", "8888/movieapp/api/movie/createMovie", JSON.stringify(movie)).then(val => {
+    multi("POST", "http://34.65.182.174:8888/movieapp/api/movie/createMovie", JSON.stringify(movie)).then(val => {
 
         console.log(val);
         document.location.href = "movies.html";
