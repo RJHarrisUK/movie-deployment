@@ -28,7 +28,7 @@ const multi = (method, url, body) => {
 
 const userTerm = sessionStorage.getItem("userToSearch");
 
-multi("GET", "http://localhost:8888/movieapp/api/user/getAUser/" + userTerm).then(val => {
+multi("GET", "http://35.205.127.158:8888/movieapp/api/user/getAUser/" + userTerm).then(val => {
 
     let data = JSON.parse(val);
  

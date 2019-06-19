@@ -43,7 +43,7 @@ const multi = (method, url, body) => {
 
 // }
 
-multi("GET", "http://localhost:8888/movieapp/api/movie/getAllMovies").then(val => {
+multi("GET", "http://35.205.127.158:8888/movieapp/api/movie/getAllMovies").then(val => {
 
 
     let data = JSON.parse(val);
@@ -116,7 +116,7 @@ const detailButtonHandler = () => {
 
 const deleteButtonHandler = () => {
 
-    multi("DELETE", "http://localhost:8888/movieapp/api/movie/deleteMovie/" + event.target.id).then(val => {
+    multi("DELETE", "http://35.205.127.158:8888/movieapp/api/movie/deleteMovie/" + event.target.id).then(val => {
 
 
         location.href = 'movies.html';
