@@ -16,5 +16,16 @@ pipeline{
                                 sh "mvn package"
                         }
                 }
+		stage('--verify--'){
+                        steps{
+                                sh "mvn verify"
+                        }
+                }
+		stage('--surefire--'){
+                        steps{
+                                sh "mvn surefire-report:report"
+				sh "mvn site"
+                        }
+                }
         }
 }
